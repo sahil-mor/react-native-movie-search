@@ -13,7 +13,7 @@ export default class Home extends React.Component {
     if(this.state.movieName === ""){
       this.setState({ showData : false , message : "Enter A Movie Name First" })
     }else{
-      return fetch("http://www.omdbapi.com/?apikey=a07e5bfb&s=" + this.state.movieName)
+      return fetch("http://www.omdbapi.com/?apikey=ur api key&s=" + this.state.movieName)
       .then(response => {
         let responseJson = response.json()
         .then((responseJson)=>{
