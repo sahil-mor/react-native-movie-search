@@ -16,7 +16,7 @@ export default class Movie extends React.Component{
         if(this.state.movieId === 'no id'){
             this.props.navigation.goBack()
         }else{
-            return fetch("http://www.omdbapi.com/?apikey=a07e5bfb&i=" + this.state.movieId)
+            return fetch("http://www.omdbapi.com/?apikey=ur api key&i=" + this.state.movieId)
             .then(response => {
                 let responseJson = response.json()
                 .then(responseJSON => {
