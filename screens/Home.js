@@ -52,12 +52,11 @@ export default class Home extends React.Component {
                       return(
                         <ScrollView horizontal={true}>
                           <List  style={{flex : 1,width : Dimensions.get("screen").width}}>
+                          <TouchableWithoutFeedback onPress={()=>{this.props.navigation.navigate("Movie",{ id : item.imdbID })}}>
                                 <ListItem thumbnail style={{flex : 1}}>                   
                                     {item.Poster != "N/A" ?
                                         <Left>
-                                            <TouchableWithoutFeedback onPress={()=>{this.props.navigation.navigate("Movie",{ id : item.imdbID })}}>
-                                                <Thumbnail  style={styles.poster} source={{ uri : item.Poster }} />
-                                            </TouchableWithoutFeedback>
+                                          <Thumbnail  style={styles.poster} source={{ uri : item.Poster }} /> 
                                         </Left>
                                     : 
                                     <View>
@@ -68,6 +67,7 @@ export default class Home extends React.Component {
                                         <Text note numberOfLines={1} style={styles.movieInfo}>Year - {item.Year}</Text>
                                     </Body>
                             </ListItem>
+                            </TouchableWithoutFeedback>
                         </List>
                        </ScrollView>
                       )
