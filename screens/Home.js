@@ -6,7 +6,7 @@ export default class Home extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      data : null,showData : false,movieName : "",message : "",apikey : "a07e5bfb"
+      data : null,showData : false,movieName : "",message : "",apikey : ""
     }
   }
   searchForMovie = () => {
