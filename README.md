@@ -1,6 +1,9 @@
 # react-native-movie-search
 API based react native app in which user can search for movies and information about movie.
 
+## Video Presentation 
+[![Watch the video](https://github.com/sahil-mor/react-native-movie-search/blob/master/Video/video.mp4)]
+
 # Getting Started
 Fork this repository.<br />
 Run npm install to download modules.<br />
